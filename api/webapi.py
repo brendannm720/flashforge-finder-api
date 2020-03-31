@@ -18,7 +18,8 @@ PORT = 8899  # default port
 
 @app.route("/")
 def index():
-    return ''
+    printer_info = get_all({'ip': ip_address, 'port': PORT})
+    return jsonify(printer_info)
 
 
 @app.route("/<string:ip_address>/info")
