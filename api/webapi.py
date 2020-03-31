@@ -1,3 +1,4 @@
+from protocol import get_all
 from protocol import get_info
 from protocol import get_head_position
 from protocol import get_temp
